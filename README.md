@@ -4,16 +4,15 @@
 Instcryp is crypto wallet library. you can create your own crypto wallet in easy steps and you can integrate this wallet in your dapp or app as a payment gatway or any other use case.
 
 
-
-# Installation
+## Installation
 
 `npm i instcryp --save`
 
 Then...
 
-Steps to create wallet and how to add token.
-1. First Create wallet  
+## Steps to create wallet and how to add token.  
 
+1. First Create wallet  
 ```
 import {createWallet} from 'instcryp';
 
@@ -24,7 +23,6 @@ await createWallet(web3);
 ```
 
 2. Get Wallet address  
-
 ```
 import {getWalletAddressbyOwner} from 'instcryp';
 
@@ -32,14 +30,12 @@ import {getWalletAddressbyOwner} from 'instcryp';
 // pass your web3 instance as a parameter
 // pass your metamask account address
 const walletAddress = await getWalletAddressbyOwner(web3, accounts[0]);
-
 ```
 
 3. Use your wallet address to add your token
 4. add token using,  
     - tokensymbol
     - tokenaddress
-
 ```
 import {addNewTokenToWallet} from 'instcryp';
 
@@ -50,13 +46,12 @@ import {addNewTokenToWallet} from 'instcryp';
 const walletAddress = await addNewTokenToWallet(web3, tokensymbol, tokenaddress);
 
 ```
+#### Your wallet is created:)
 
-### Your wallet is created:)
+## How to use after wallet creation?
 
-## How to use?
-
+1. approve token to wallet address from your address
 ```
-
 import {approve} from 'instcryp';
 
 // use this method to get your wallet address 
@@ -67,8 +62,8 @@ import {approve} from 'instcryp';
 await approve(web3, tokensymbol, spender, value);
 ```
 
+2. After approve transfer approved token to recipient(toaddress) address. 
 ```
-
 import {transfer} from 'instcryp';
 
 // use this method to get your wallet address 
@@ -79,6 +74,8 @@ import {transfer} from 'instcryp';
 // pass value 
 await transfer(web3, walletAddress, tokenSymbol, toaddress, value);
 ```
+
+#### [Click here to Instcryp npmjs link](https://www.npmjs.com/package/instcryp)
 
 *This wallet library is only on kovan network.*
 

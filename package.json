@@ -1,0 +1,23 @@
+{
+  "name": "instcryp",
+  "version": "1.0.0",
+  "description": "Instcryp is crypto wallet library. You can create your own wallet and can integrate in your dapp or app.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunnyRK/instcryp-wallet.git"
+  },
+  "keywords": [
+    "cryptotokenwallet",
+    "erc20"
+  ],
+  "author": "Sunny Radadiya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sunnyRK/instcryp-wallet/issues"
+  },
+  "homepage": "https://github.com/sunnyRK/instcryp-wallet#readme"
+}

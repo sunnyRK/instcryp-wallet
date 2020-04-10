@@ -131,7 +131,6 @@ export async function removeTokenToWallet(web3, tokenSymbol, walletAddress) {
 
 export async function getWalletAddressbyOwner(web3, address) {
     try {
-        const accounts = await web3.eth.getAccounts();
         const contractInstance = getWalletFactoryContractInstance(web3);
         const addr = await contractInstance.methods.getWalletAddressbyOwner(address).call();
         return addr;
